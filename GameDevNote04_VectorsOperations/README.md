@@ -1,9 +1,6 @@
 ## GameDev 04 - Vectors Manipulation
 
-> 此篇笔记是**GameDev笔记**系列的第4篇，记录了如何用C#实现向量的标准化、距离、点乘、角度、交叉乘积的计算以及向量旋转和平移的操作，以及如何应用这些操作向量的方法控制Unity物体的旋转与移动。
-> - 1
-> - 2
-> - 3
+> This note documents how to implement vector normalization, distance calculation, dot product, angle, cross product, and operations for vector rotation and translation in C#, as well as how to apply these vector manipulation methods to control the rotation and movement of objects in Unity.
 
 ### 0. Intro
 Right Click in the Assets, *Import Custom Package* `DrivableTank2D.unitypackage`, 
