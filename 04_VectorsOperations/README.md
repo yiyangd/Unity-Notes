@@ -2,17 +2,6 @@
 
 > This note documents how to implement vector normalization, distance calculation, dot product, angle, cross product, and operations for vector rotation and translation in C#, as well as how to apply these vector manipulation methods to control the rotation and movement of objects in Unity.
 
-### 0. Intro
-Right Click in the Assets, *Import Custom Package* `DrivableTank2D.unitypackage`, 
-- duplicate the `Tank` by `ctrl+D` in `Hierarchy` and 
-- drag a `Fuel` from `Prefab` folder to `Starter` Scene
-
-![](https://files.mdnice.com/user/1474/d138990e-098a-4e59-b9ac-81adfa60743b.png)
-
-**The objective** is that *upon pressing the 'Play' button* in Unity, both tanks will *autonomously orient* themselves *towards the fuel depot* and then *advance directly towards it*.
-![](https://files.mdnice.com/user/1474/21363c44-55a9-4419-91f9-829d7448e6b0.png)
-
-
 ### 1. Vector Operation
 #### Create a Script: `HolisticMath`
 This script provides a set of **static mathematical methods** for **vector manipulation** in a 2D or 3D space, 
@@ -135,14 +124,13 @@ $$\theta = \arccos{(\frac{\vec{v}_1 \cdot \vec{v}_2}{\|\vec{v}_1\| \cdot \|\vec{
 $$\text{Vector}\ \vec{v} = \begin{bmatrix}
 x  \\
 y
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
-$$\text{Rotated Vector} = 
-\begin{bmatrix}
+$$\text{Rotated Vector} = \begin{bmatrix}
 x \cdot \cos\theta - y \cdot \sin\theta \\
 x \cdot \sin\theta + y \cdot \cos\theta 
 \end{bmatrix}
-
 $$
 
 ```csharp
