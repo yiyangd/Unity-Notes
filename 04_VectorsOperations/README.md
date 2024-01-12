@@ -1,4 +1,4 @@
-## GameDev 04 - Vectors Manipulation
+## Unity 04 - Vectors Manipulation
 
 > This note documents how to implement vector normalization, distance calculation, dot product, angle, cross product, and operations for vector rotation and translation in C#, as well as how to apply these vector manipulation methods to control the rotation and movement of objects in Unity.
 
